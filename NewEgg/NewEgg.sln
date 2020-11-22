@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewEgg", "NewEgg.csproj", "{ABA09FCD-8AC2-489F-87C1-00EDF10EAB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanadaPost", "..\CanadaPost\CanadaPost.csproj", "{D3B7805F-E9F2-4327-987F-905BB5696D5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABA09FCD-8AC2-489F-87C1-00EDF10EAB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA09FCD-8AC2-489F-87C1-00EDF10EAB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA09FCD-8AC2-489F-87C1-00EDF10EAB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA09FCD-8AC2-489F-87C1-00EDF10EAB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B7805F-E9F2-4327-987F-905BB5696D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B7805F-E9F2-4327-987F-905BB5696D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B7805F-E9F2-4327-987F-905BB5696D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B7805F-E9F2-4327-987F-905BB5696D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {922899A6-3BCC-4D30-9119-22853EB9D024}
+	EndGlobalSection
+EndGlobal
