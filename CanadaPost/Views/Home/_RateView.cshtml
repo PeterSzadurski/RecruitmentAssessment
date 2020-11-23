@@ -1,0 +1,22 @@
+﻿@model pricequotesPricequote[]
+
+@if (Model != null)
+{
+<table width="100%">
+    <thead>
+        <tr>
+            <th>Service Type</th>
+            <th>Regular Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.servicename</td>
+                <td>$@x.pricedetails.due</td>
+            </tr>
+        }
+    </tbody>
+</table>
+}

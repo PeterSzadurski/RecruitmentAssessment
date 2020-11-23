@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Threading.Tasks;
 using System.Web.Mvc;
-
 namespace CanadaPost.Controllers
 {
     public class HomeController : Controller
@@ -13,18 +9,15 @@ namespace CanadaPost.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [HttpGet]
+        public async Task<ActionResult> RateView()
         {
-            ViewBag.Message = "Your application description page.";
+            CanadaPostApi canadaPost = new CanadaPostApi();
+            pricequotesPricequote[] pqs;
+            pqs = await canadaPost.GetRatings();
 
-            return View();
+            return PartialView("_RateView", pqs);
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

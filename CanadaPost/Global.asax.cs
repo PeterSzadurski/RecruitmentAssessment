@@ -12,6 +12,8 @@ namespace CanadaPost
     {
         protected void Application_Start()
         {
+            ApiHandler.InitializeClient();
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

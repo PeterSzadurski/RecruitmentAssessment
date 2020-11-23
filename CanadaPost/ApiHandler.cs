@@ -12,7 +12,7 @@ namespace CanadaPost
         public static HttpClient ApiClient { get; set; }
 
 
-        public void InitializeClient()
+        public static void InitializeClient()
         {
 
             ApiClient = new HttpClient();

@@ -1,0 +1,26 @@
+﻿@model List<Newegg.Marketplace.SDK.Order.Model.OrderInfo>
+<table width="100%">
+    <thead>
+        <tr>
+            <th>Order Number</th>
+            <th>Ship to First Name</th>
+            <th>Ship To Address 1</th>
+            <th>Ship To Zip Code</th>
+            <th>Ship To Country Code</th>
+            <th>Order Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var x in Model)
+        {
+        <tr>
+            <td>@x.OrderNumber</td>
+            <td>@x.ShipToFirstName</td>
+            <td>@x.ShipToAddress1</td>
+            <td>@x.ShipToZipCode</td>
+            <td>@x.ShipToCountryCode</td>
+            <td>@x.OrderTotalAmount</td>
+        </tr>
+        }
+    </tbody>
+</table>
